@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo
+  rabbitmq:
+    addresses:
+      - amqp://lab:lab123@localhost:5672
+      - amqp://lab:lab123@localhost:5673
+      - amqp://lab:lab123@localhost:5674
+    listener:
+      simple:
+        acknowledge-mode: manual
